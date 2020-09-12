@@ -8,12 +8,12 @@ ORGANIC_PRODUCE = [
   "Asparagus"
 ]
 
-CONVENTIONAL_PRODUCE = [
-  "Strawberries",
-  "Potatoes",
-  "Grapes",
-  "Avocadoes",
-  "Asparagus"
+  CONVENTIONAL_PRODUCE = [
+  "Grapefruit",
+  "Pineapple",
+  "Oranges",
+  "Watermelon",
+  "Eggplant"
 ]
 
 def assembled_matrix
@@ -25,21 +25,8 @@ end
 
 def sorted_matrix
   produce_storage_room_alphabetical = [
-   [
-     "Asparagus",
-     "Avocadoes",
-     "Grapes",
-     "Potatoes",
-     "Strawberries"
-   ],
-   
-    [
-     "Asparagus",
-     "Avocadoes",
-     "Grapes",
-     "Potatoes",
-     "Strawberries"
-]
+     CONVENTIONAL_PRODUCE.sort,
+     ORGANIC_PRODUCE.sort 
     ]
 end
 
@@ -50,7 +37,7 @@ end
 
 def matrix_update(matrix, row, column, new_value)
   matrix[row][column] = new_value
-  matrix
+  matrix 
   # Given any matrix (array of arrays), a row index and a column index, 
   # Update the matrix location at that row and column to have the value of new_value
   # Return the updated matrix
