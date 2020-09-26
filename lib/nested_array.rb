@@ -1,30 +1,12 @@
 # Examples inspired by U. S. National Organic Standards
 
-# ORGANIC_PRODUCE = [
-#   "Strawberries",
-#   "Potatoes",
-#   "Grapes",
-#   "Avocadoes",
-#   "Asparagus"
-# ]
-
-# CONVENTIONAL_PRODUCE = [
-#   "Grapefruit",
-#   "Pineapple",
-#   "Oranges",
-#   "Watermelon",
-#   "Eggplant"
-# ]
-
-def assembled_matrix
-  produce_storage_room = [
-  ORGANIC_PRODUCE = [
+ORGANIC_PRODUCE = [
   "Strawberries",
   "Potatoes",
   "Grapes",
   "Avocadoes",
   "Asparagus"
-],
+]
 
 CONVENTIONAL_PRODUCE = [
   "Grapefruit",
@@ -33,6 +15,12 @@ CONVENTIONAL_PRODUCE = [
   "Watermelon",
   "Eggplant"
 ]
+
+def assembled_matrix
+  produce_storage_room = [
+  CONVENTIONAL_PRODUCE, 
+   ORGANIC_PRODUCE 
+
 ]
  
  
