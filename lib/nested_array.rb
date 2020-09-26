@@ -31,41 +31,35 @@ def assembled_matrix
   # Make sure conventional produce is first, on the 'zeroth' / 'bottom' shelf
 end
 
-# def sorted_matrix
+def sorted_matrix
 
-# produce_storage_room =[
+produce_storage_room =[
   
-#   conventional_produce = [
-#   "Grapefruit",
-#   "Pineapple",
-#   "Oranges",
-#   "Watermelon",
-#   "Eggplant" ],
-   
-#   organic_produce = [
-#   "Strawberries",
-#   "Potatoes",
-#   "Grapes",
-#   "Avocadoes",
-#   "Asparagus"     ]
-# ]
-# produce_storage_room.sort 
+CONVENTIONAL_PRODUCE.sort,
+ORGANIC_PRODUCE.sort
+]
+ 
 
 #   # Using Array literal syntax only, build another nested array that 
 #   # uses the arrays of conventional and organic produce as before.
 #   # However, this time, sort each internal array alphabetically by the first character
-# end
+end
 
-# def matrix_lookup(matrix, row, column)
+def matrix_lookup(matrix, row, column)
   
   
-  
+  matrix[row][column]
 #   # Given any matrix (array of arrays), a row index and a column index, 
 #   # Return the matrix's content at that row and and column
-# end
+end
 
-# def matrix_update(matrix, row, column, new_value)
-#   # Given any matrix (array of arrays), a row index and a column index, 
-#   # Update the matrix location at that row and column to have the value of new_value
-#   # Return the updated matrix
-# end
+
+
+def matrix_update(matrix, row, column, new_value)
+  
+  matrix[row][column] = new_value
+ matrix
+  # Given any matrix (array of arrays), a row index and a column index, 
+  # Update the matrix location at that row and column to have the value of new_value
+  # Return the updated matrix
+end
